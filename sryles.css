@@ -1,0 +1,79 @@
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600&display=swap');
+
+        body {
+            background: url('https://media.giphy.com/media/pd4zFWUggiXISW5Wlm/giphy.gif') no-repeat center center fixed;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+            
+        }
+        h1 {
+            font-family: 'Lobster', cursive;
+            color:#4a02e6;
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: floatUp 6s infinite alternate;
+        }
+        p {
+            color: #4a02e6;
+            margin: 10px 0;
+            font-size: 1.5em;
+            line-height: 1.6;
+            text-align: center;
+            animation: floatText 6s infinite alternate;
+        }
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 1.5em;
+            color: #4a02e6;
+            animation: floatText 6s infinite alternate;
+        }
+        .name-pop {
+            color: #4a02e6;
+            font-size: 1.7em;
+            font-weight: bold;
+            animation: pop 1s infinite alternate;
+        }
+        @keyframes floatText {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        @keyframes pop {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.2); }
+        }
+        .balloon {
+            position: absolute;
+            width: 50px;
+            animation: floatBalloon 6s ease-in-out infinite;
+        }
+        .balloon:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation-duration: 5s;
+        }
+        .balloon:nth-child(2) {
+            top: 20%;
+            left: 50%;
+            animation-duration: 7s;
+        }
+        .balloon:nth-child(3) {
+            top: 30%;
+            left: 90%;
+            animation-duration: 6s;
+        }
+        @keyframes floatBalloon {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>

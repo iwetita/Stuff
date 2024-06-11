@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600&display=swap');
+
+    body {
+        background: url('https://media.giphy.com/media/pd4zFWUggiXISW5Wlm/giphy.gif') no-repeat center center fixed;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        color: #333;
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+        
+    }
+    .text-container {
+            animation: floatUp 6s forwards;
+            text-align: center;
+    }        
+    h1 {
+        font-family: 'Lobster', cursive;
+        color:#f22df9;
+        font-size: 3em;
+        margin-bottom: 20px;
+        animation: floatUp 6s infinite alternate;
+    }
+    p {
+        color: #4a02e6;
+        margin: 10px 0;
+        font-size: 1.5em;
+        line-height: 1.6;
+        text-align: center;
+        animation: floatText 6s infinite alternate;
+    }
+    .signature {
+        margin-top: 20px;
+        font-style: italic;
+        font-size: 1.5em;
+        color: #4a02e6;
+        animation: floatText 6s infinite alternate;
+    }
+    .name-pop {
+        color: #14f3bb;
+        font-size: 1.7em;
+        font-weight: bold;
+        animation: pop 1s infinite alternate;
+    }
+    @keyframes floatText {
+        0% { transform: translateY(100); }
+        100% { transform: translateY(0); }
+    }
+    @keyframes pop {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.2); }
+    }
+    @keyframes floatUp {
+         0% { transform: translateY(100vh); }
+         100% { transform: translateY(0); }
+    }
+
+
+</style>
+<body>
+    <h1>Happy 33rd Birthday!</h1> &#127874; &#127881; &#127880; &#11088; &#10024; &#127882; &#127873;
+    <p><span class="name-pop">My Izuchkwu Chimeremeze  </span></p>
+    <p>They say age is just a number. In your case, it’s a really high one! <br> But don't worry, you still look Ok &#128540;</p>
+    <p>You've survived 33 years of life, which is a huge achievement.<br> Keep going strong and enjoy every moment!</p>
+    <p>May your day be filled with laughter and all the happiness you can handle.<br> Remember, it's your day to shine!</p>
+    <p>Even though I might have driven you a bit nuts, I hope today brings you nothing but joy. <br> Wishing you the best in health and life.</p>
+    <p class="signature">With lots of love, <br> Toto &#10084;</p>
+
+</body>
+</html>
